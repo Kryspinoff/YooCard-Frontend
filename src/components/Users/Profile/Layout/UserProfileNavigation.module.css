@@ -1,0 +1,124 @@
+.navigation {
+  position: fixed;
+  display: grid;
+  /*width: 100%;*/
+  width: calc(100% - 24px);
+  left: 0;
+  right: 0;
+  top: 0;
+  grid-template-columns: 1fr auto 1fr;
+  border: 1px solid transparent;
+  border-radius: 72px;
+  background-color: transparent;
+  transition: background-color 150ms ease 0s, -webkit-transform 150ms ease 0s, -webkit-backdrop-filter 150ms ease 0s;
+  margin: 8px auto;
+  -webkit-box-align: center;
+  align-items: center;
+  padding: 8px 24px 8px 12px;
+  z-index: 10;
+  vertical-align: baseline;
+}
+
+.navigation.scrolled {
+  background-color: rgba(255, 255, 255, 0.5);
+  border: 1px solid rgb(235, 238, 241);
+  /*width: calc(100% - 24px);*/
+  /*padding: 8px 12px;*/
+  backdrop-filter: blur(10px);
+}
+
+@media screen and (min-width: 576px) {
+  .navigation {
+    padding-right: 12px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    margin-top: 12px;
+    margin-bottom: 12px;
+  }
+}
+
+@media (min-width: 768px) {
+  .navigation {
+    max-width: calc(788px);
+  }
+}
+
+.button {
+  transition-property: color,background-color,border-color,text-decoration-color,fill,stroke;
+  transition-timing-function: cubic-bezier(.4,0,.2,1);
+  transition-duration: .15s;
+  --tw-text-opacity: 1;
+  color: rgb(0 0 0/var(--tw-text-opacity));
+  --tw-bg-opacity: 1;
+  background-color: rgb(240 240 240/var(--tw-bg-opacity));
+  --tw-border-opacity: 1;
+  border-color: rgb(226 226 226/var(--tw-border-opacity));
+  border-width: 1px;
+  border-radius: 50%;
+  justify-self: end;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  cursor: pointer;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  grid-column-start: 3;
+  /*cursor: pointer;*/
+  -webkit-appearance: button;
+  /*background-color: transparent;*/
+  background-image: none;
+  text-transform: none;
+}
+
+.button > svg {
+  width: 16px;
+  height: 16px;
+}
+
+.scrolled .username-wrapper {
+  opacity: 1;
+}
+
+.scrolled .picture-wrapper {
+  opacity: 1;
+}
+
+.username-wrapper {
+  grid-column-start: 2;
+  grid-row-start: 1;
+  opacity: 0;
+}
+
+.username {
+  padding: 0;
+  margin: 0;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #000000;
+}
+
+.picture-wrapper {
+  grid-column-start: 1;
+  grid-row-start: 1;
+  opacity: 0;
+  width: 44px;
+  height: 44px;
+}
+
+.picture {
+  height: 44px;
+  width: 44px;
+}
+
+.picture > p {
+  height: 44px;
+  width: 44px;
+  font-size: 18px;
+}
+
+.picture > img {
+  height: 44px;
+  width: 44px;
+}

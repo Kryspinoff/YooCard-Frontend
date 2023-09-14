@@ -1,0 +1,121 @@
+.container {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background: #ffffff;
+}
+
+@media (min-width: 993px) {
+  .container {
+    margin: 0 auto;
+    padding: 0 30px;
+    height: 90px;
+    width: 100%;
+    border-bottom: 1px solid #eee;
+    box-shadow: 0 3px 15px -5px rgba(0, 0, 0, .08);
+  }
+
+  .container-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
+    max-width: 1170px;
+    margin: auto;
+  }
+}
+
+.header {
+  display: flex;
+  padding: 0;
+  order: 1;
+}
+
+@media (min-width: 993px) {
+  .header {
+    margin-right: 30px;
+    order: 0;
+  }
+}
+
+.logo {
+  height: 22px;
+  width: auto;
+}
+
+@media (min-width: 993px) {
+  .logo {
+    height: 30px;
+  }
+}
+
+.navigation {
+  height: 100%;
+  min-width: 600px;
+}
+
+.list {
+  display: flex;
+  justify-content: center;
+  width: max-content;
+  padding: 0;
+  list-style: none;
+}
+
+@media (min-width: 993px) {
+  .list {
+    height: 100%;
+    margin: auto;
+  }
+}
+
+.list > li {
+  display: flex;
+  align-self: center;
+  height: 100%;
+}
+
+.list > li > a {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  /*color: #585b85;*/
+  padding: 0 12px;
+  color: #323232;
+}
+
+.list:hover > li > a {
+  color: #949494;
+}
+
+.list > li > a:hover {
+  color: #323232;
+}
+
+.list > li > a > span {
+  position: relative;
+}
+
+.list > li:hover > a > span::before {
+  transform: scale(1,1);
+  transform-origin: left center;
+}
+
+@media (hover: hover) and (min-width: 993px) {
+  .list > li > a > span::before {
+    display: block;
+    position: absolute;
+    top: calc(100% + 2px);
+    left: 0;
+    width: 100%;
+    border-bottom: 1px solid #ccc;
+    content: "";
+    transition: transform .6s cubic-bezier(.28,.75,.22,.95);
+    transform: scale(0,1);
+    transform-origin: right center;
+  }
+}
+
+.list > li > a > span::before {
+  border-color: #279aa0;
+}

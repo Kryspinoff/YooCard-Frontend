@@ -1,0 +1,22 @@
+.form-elements {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.picture-wrapper {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 32px;
+}
+
+.picture {
+  width: 256px;
+  height: 256px;
+}
+
+.picture img {
+  width: 256px;
+  height: 256px;
+}

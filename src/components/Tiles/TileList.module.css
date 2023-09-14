@@ -1,0 +1,16 @@
+.list {
+  padding: 0;
+  list-style: none;
+}
+
+.list li {
+  margin: 16px 0;
+}
+
+.list li:first-child {
+  margin-top: 0;
+}
+
+.list li:last-child {
+  margin-bottom: 0;
+}

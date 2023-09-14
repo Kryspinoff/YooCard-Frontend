@@ -1,0 +1,65 @@
+/*.container {*/
+/*  width: 500px;*/
+/*  !*height: 100%;*!*/
+/*  margin: auto;*/
+/*  padding: 48px;*/
+/*  !*background: rgba(187, 236, 174, 0.55);*!*/
+/*  !*background: rgba(0, 0, 0, 0.52);*!*/
+/*}*/
+
+/*.container h2 {*/
+/*  text-align: center;*/
+/*  !*margin: auto;*!*/
+/*  font-size: 1.75rem;*/
+/*  color: #ffffff;*/
+/*  !*font-family: inherit;*!*/
+/*  font-family: Inter,Helvetica,Arial,system-ui,-apple-system;*/
+/*}*/
+
+/*.container div {*/
+/*  !*margin: 16px auto;*!*/
+/*}*/
+
+form {
+  /*margin: auto;*/
+  /*max-width: 500px;*/
+}
+
+h2 {
+  font-size: 1.75rem;
+  text-align: center;
+  margin: 36px auto;
+}
+
+.form-elements {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.form-elements a {
+  color: #ffffff;
+  font-weight: 700;
+  text-decoration: none;
+  transition: 0.2s color ease-in-out;
+}
+
+.form-elements a:hover {
+  color: rgb(185, 185, 185);
+}
+
+.button-submit {
+  /*color: rgba(155, 131, 178, 0.55);*/
+}
+
+.switch-mode {
+  margin: 0;
+  text-align: center;
+}
+
+.error {
+  /*margin: 4px;*/
+  /*font-weight: 600;*/
+  /*color: #ec392f;*/
+  /*text-align: center;*/
+}

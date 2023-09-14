@@ -1,1 +1,1 @@
-# YooCard forntend
+# YooCard frontend
